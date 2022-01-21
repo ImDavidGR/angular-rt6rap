@@ -1,0 +1,18 @@
+<section class="container">
+  <figure *ngFor="let character of characters">
+    <img [src]="character.img" [alt]="character.name" />
+    <figcaption>
+      <header>
+        <span class="name">{{ character.name }}</span>
+        <span class="nick">{{ character.nickname }}</span>
+      </header>
+      
+      <section class="occupations">
+          <p>Occupations:</p>
+          <p> {{ character.occupation }}</p>
+      </section>
+
+      <p class="status">Status: {{ character.status }}</p>
+    </figcaption>
+  </figure>
+</section>
